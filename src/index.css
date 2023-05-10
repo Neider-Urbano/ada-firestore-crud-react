@@ -1,0 +1,119 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #dfffd8;
+}
+
+.container-app {
+  width: 100%;
+  text-align: center;
+}
+.title-welcome {
+  font-size: 18pt;
+  color: #0f0e0e;
+}
+.container-options {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+.container-form {
+  background: #f7c8e0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 350px;
+}
+.container-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.container-form h2,
+.container-patients h2 {
+  color: #0f0e0e;
+  font-size: 15pt;
+  font-weight: 500;
+}
+.container-form form label p {
+  margin: 0px 0px 3px 0px;
+}
+.container-form form label input {
+  padding: 7px 7px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 12pt;
+}
+.input-save {
+  border-radius: 5px;
+  background: mediumseagreen;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 7px;
+  font-size: 12pt;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.container-patients {
+  padding: 30px;
+  background: #b4e4ff;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container-patients-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card-patient {
+  border: 1.5px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  background: lightgrey;
+}
+.patient-info h5 {
+  font-size: 12.5pt;
+  font-weight: 500;
+}
+.patient-info h6 {
+  font-size: 12pt;
+  font-weight: 400;
+}
+.patient-info h5,
+.patient-info h6 {
+  margin: 0;
+}
+.patient-options {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.patient-options button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 7px 20px;
+  cursor: pointer;
+  font-size: 11pt;
+}
+.button-edit {
+  background: aquamarine;
+}
+.button-deleted {
+  background: lightcoral;
+}
+.button-detail {
+  background: cornflowerblue;
+}
