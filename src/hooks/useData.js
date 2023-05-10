@@ -32,12 +32,11 @@ const useData = (nameCollection) => {
     return "Deleted Patient";
   };
 
-  const updateData = async (id, newdata) => {
-    const washingtonRef = doc(db, "patients", id);
+  const updateData = async (nameCollection, id, newdata) => {
+    const washingtonRef = doc(db, nameCollection, id);
     try {
       await updateDoc(washingtonRef, newdata);
-      getData("patients");
-      return "Updated Patient";
+      getData(nameCollection);
     } catch (error) {
       throw new Error(error.message);
     }

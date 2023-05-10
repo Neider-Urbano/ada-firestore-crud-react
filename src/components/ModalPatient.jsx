@@ -31,12 +31,11 @@ const ModalPatient = ({ modalIsOpen, setIsOpen, patient }) => {
   };
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    options.updateData(patient.id, data).then((data) => {
-      notify(data);
-      setTimeout(() => {
-        closeModal();
-      }, 2000);
-    });
+    options.updateData("patients", patient.id, data);
+    notify("Update patient");
+    setTimeout(() => {
+      closeModal();
+    }, 2000);
   };
 
   return (
